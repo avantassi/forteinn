@@ -1,0 +1,18 @@
+@mixin notebook {
+	@media screen and (max-width: $notebook) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }  
+  }

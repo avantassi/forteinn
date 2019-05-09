@@ -1,0 +1,26 @@
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.parallax-mirror{
+    margin-bottom: -50px;
+}
+
+.founder{
+    padding: 50px 0;
+
+    &__text-wrap{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__text{
+        background-color: $black-rgba;
+        color: $white;
+        font-size: 18px;
+        padding: 30px;
+        max-width: 420px;
+        line-height: 30px;
+    }
+}

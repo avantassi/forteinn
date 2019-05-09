@@ -1,0 +1,122 @@
+.rooms{
+    padding-top: 90px;
+    background-color: #eeeeee;
+
+    &__services{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        margin-top: 50px;
+    }
+
+    &__title{
+        color: $brown;
+        font-size: 18px;
+        text-align: center;
+        max-width: 150px;
+    }
+
+    &__wrap{
+        margin-top: 100px;
+    }
+
+    &__room{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        &--reverse{
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__photo-wrap{
+        min-width: 720px;
+    }
+
+    &__descr-wrap{
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--reverse{
+            margin-left: 0;
+            margin-right: 60px;
+        }
+
+        .btn{
+            margin-top: auto;
+        }
+    }
+
+    &__name{
+        color: $bordo;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__descr-list{
+
+    }
+
+    &__descr-item{
+        color: $brown;
+        font-size: 18px;
+        position: relative;
+        padding-left: 25px;
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            background-color: $gray;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.fotorama__nav-wrap{
+    margin-top: 15px;
+}
+
+.fotorama__nav__shaft{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotorama__thumb-border{
+    display: none;
+}
+
+.fotorama__nav__frame{
+    margin: 0;
+}
+
+.fotorama__thumb{
+    position: relative;
+
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $black-rgba;
+    }
+}
+
+.fotorama__active .fotorama__thumb:after{
+    display: none;
+}

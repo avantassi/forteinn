@@ -1,0 +1,65 @@
+.header{
+    background: #ffffff; /* Old browsers */
+    // background: -moz-linear-gradient(45deg, #ffffff 0%, #ffffff 34%, #eeeeee 35%, #eeeeee 100%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(45deg, #ffffff 0%,#ffffff 34%,#eeeeee 35%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(70deg, #ffffff 41%,#ffffff 40%,#eeeeee 41%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
+    padding: 25px 0;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.address{
+    color: $brown;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__row{
+        display: flex;
+        align-items: center;
+
+        &--column{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+.tel, .mail{
+    display: flex;
+    align-items: center;
+    color: $brown;
+    font-size: 18px;
+    margin-right: 50px;
+
+    img{
+        display: block;
+        margin-right: 15px;
+    }
+}
+
+.tel{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+
+    &__link{
+        color: $bordo;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,38 @@
+.about{
+    padding: 90px 0;
+
+    &__title-wrap{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__descr{
+        text-align: left;
+        font-size: 18px;
+        color: $brown;
+        margin-top: 40px;
+        line-height: 34px;
+
+        &--center{
+            text-align: center;
+            margin-top: 25px;
+        }
+    }
+
+    &__img-wrap{
+        margin-left: 50px;
+        border: 2px solid $bordo;
+        display: flex;
+        padding: 5px;
+        margin-top: 45px;
+    }
+
+    &__img{
+        object-fit: cover;
+    }
+}
