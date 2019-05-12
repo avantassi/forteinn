@@ -9,10 +9,28 @@
 
 .founder{
     padding: 50px 0;
+    position: relative;
+
+    @include notebook{
+        padding-top: 20px;
+    }
+
+    @include phones{
+        padding-bottom: 0;
+        background: url(../img/founder.jpg) center center no-repeat;
+        background-size: cover;
+    }
 
     &__text-wrap{
         display: flex;
         justify-content: flex-end;
+
+        @include phones{
+            position: absolute;
+            bottom: -93%;
+            min-height: 372px;
+            left: 0;
+        }
     }
 
     &__text{
@@ -22,5 +40,16 @@
         padding: 30px;
         max-width: 420px;
         line-height: 30px;
+
+        @include notebook{
+            font-size: 16px;
+            max-width: 370px;
+        }
+
+        @include phones{
+            font-size: 14px;
+            line-height: 24px;
+            max-width: none;
+        }
     }
 }

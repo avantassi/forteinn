@@ -2,6 +2,10 @@
     padding-top: 90px;
     background-color: #eeeeee;
 
+    @include phones{
+        padding-top: 30px;
+    }
+
     &__services{
         display: flex;
         flex-wrap: wrap;
@@ -14,6 +18,10 @@
         align-items: center;
         width: 20%;
         margin-top: 50px;
+
+        @include phones{
+            width: 50%;
+        }
     }
 
     &__title{
@@ -32,13 +40,24 @@
         justify-content: space-between;
         margin-bottom: 70px;
 
+        @include phones{
+            flex-direction: column;
+            position: relative;
+            margin-bottom: 120px;
+        }
+
         &--reverse{
             flex-direction: row-reverse;
+
+            @include phones{
+                flex-direction: column;
+                margin-bottom: 70px;
+            }
         }
     }
 
     &__photo-wrap{
-        min-width: 720px;
+        max-width: 720px;
     }
 
     &__descr-wrap{
@@ -47,24 +66,51 @@
         flex-direction: column;
         align-items: flex-start;
 
+        @include notebook{
+            margin-left: 40px;
+        }
+
+        @include phones{
+            margin-left: 0;
+            align-items: center;
+        }
+
         &--reverse{
             margin-left: 0;
             margin-right: 60px;
+
+            @include phones{
+                margin-right: 0;
+            }
         }
 
         .btn{
             margin-top: auto;
+
+            @include notebook{
+                margin-top: 20px;
+            }
         }
     }
 
     &__name{
         color: $bordo;
         font-size: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+
+        @include phones{
+            position: absolute;
+            top: -60px;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__descr-list{
 
+        @include phones{
+            margin-left: 20px;
+        }
     }
 
     &__descr-item{
@@ -102,6 +148,11 @@
 
 .fotorama__nav__frame{
     margin: 0;
+
+    @include notebook{
+        height: 120px !important;
+        padding: 10px !important;
+    }
 }
 
 .fotorama__thumb{

@@ -41,10 +41,11 @@ section{
 	max-width: 1200px;
 	width: 100%;
 	padding: 0 15px;
+	padding-left: 25px;
+	padding-right: 25px;
 
 	@include notebook{
-		padding-left: 25px;
-		padding-right: 25px;
+		max-width: 1000px;
 	}
 
 	&:after{
@@ -65,6 +66,15 @@ section{
 	text-shadow: 0 1px 5px $black;
 	text-align: center;
 	width: 50%;
+
+	@include notebook{
+		width: 65%;
+	}
+
+	@include phones{
+		font-size: 24px;
+		width: 80%;
+	}
 }
 
 .second-title{
@@ -77,6 +87,10 @@ section{
 	display: inline-block;
 	font-weight: bold;
 
+	@include phones{
+		font-size: 18px;
+	}
+
 	&:before{
 		content: '';
 		display: block;
@@ -86,6 +100,10 @@ section{
 		background-color: $brown;
 		left: 0;
 		top: 53%;
+
+		@include phones{
+			width: 55px;
+		}
 	}
 
 	&:after{
@@ -97,5 +115,9 @@ section{
 		background-color: $brown;
 		right: 0;
 		top: 53%;
+
+		@include phones{
+			width: 55px;
+		}
 	}
 }

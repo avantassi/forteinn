@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=500, user-scalable=0">
 	<title>Forte Inn</title>
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
@@ -19,7 +20,7 @@
 				<div class="address">Санкт-Петербург, 9-я Советская ул, дом 1</div>
 			</div>
 			<div class="info">
-				<div class="info__row">
+				<div class="info__row info__row--contacts">
 					<a href="tel:+78123094101" class="tel">
 						<img src="img/tel.png" alt="" class="tel__img">
 						+7 (812) 309-41-01
@@ -31,6 +32,10 @@
 					<a href="" class="btn">Забронировать</a>
 				</div>
 				<div class="info__row">
+						<input id="toggle" type="checkbox">
+						<label class="toggle-container" for="toggle">
+							<span class="button button-toggle"></span>
+						</label>
 					<nav class="nav">
 						<a href="#about" class="nav__link">Об отеле</a>
 						<a href="#rooms" class="nav__link">Номера</a>
@@ -256,7 +261,6 @@
 </section>
 
 <section class="gallery" id="gallery">
-
 </section>
 
 <section class="founder parallax-window">
