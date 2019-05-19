@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=500, user-scalable=0">
 	<title>Forte Inn</title>
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -40,7 +43,7 @@
 						<a href="#about" class="nav__link">Об отеле</a>
 						<a href="#rooms" class="nav__link">Номера</a>
 						<a href="#extra" class="nav__link">Услуги</a>
-						<a href="#gallery" class="nav__link">Фотогалерея</a>
+						<a href="#rooms" class="nav__link">Фотогалерея</a>
 						<a href="#contacts" class="nav__link">Контакты</a>
 					</nav>
 				</div>
@@ -64,8 +67,8 @@
 		<div class="container">
 			<div class="booking__wrap">
 				<div class="booking__dates">
-					<div class="input-wrap"><input type="text" class="booking__dates-input"></div>
-					<div class="input-wrap"><input type="text" class="booking__dates-input"></div>
+					<div class="input-wrap"><input type="text" class="booking__dates-input datepicker-here" id="minMax"></div>
+					<div class="input-wrap"><input type="text" class="booking__dates-input datepicker-here" id="minMax2"></div>
 				</div>
 				<a href="" class="btn btn--reverse">Найти номер</a>
 			</div>
@@ -173,10 +176,24 @@
 		</div>
 		<div class="rooms__wrap">
 			<div class="rooms__room">
-				<div class="rooms__photo-wrap fotorama" data-nav="thumbs" data-thumbwidth="230" data-thumbheight="150">
+				<!-- <div class="rooms__photo-wrap fotorama" data-nav="thumbs" data-thumbwidth="230" data-thumbheight="150">
 					<img src="img/rooms-1.jpg" class="rooms__photo">
 					<img src="img/rooms-2.jpg" class="rooms__photo">
 					<img src="img/rooms-3.jpg" class="rooms__photo">
+				</div> -->
+				<div class="rooms__photo-wrap">
+					<div class="slider-for">
+						<img src="img/rooms-1.jpg" class="rooms__photo">
+						<img src="img/rooms-2.jpg" class="rooms__photo">
+						<img src="img/rooms-3.jpg" class="rooms__photo">
+						<img src="img/1.jpg" class="rooms__photo">
+					</div>
+					<div class="slider-nav">
+						<img src="img/rooms-1.jpg" class="rooms__photo">
+						<img src="img/rooms-2.jpg" class="rooms__photo">
+						<img src="img/rooms-3.jpg" class="rooms__photo">
+						<img src="img/1.jpg" class="rooms__photo">
+					</div>
 				</div>
 				<div class="rooms__descr-wrap">
 					<p class="rooms__name">Номер СТАНДАРТ</p>
@@ -315,19 +332,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/parallax.min.js"></script>
-<script>
-$('.parallax-window').parallax({imageSrc: 'img/founder.jpg'});
+<script src="js/datepicker.js"></script>
+<script src="js/common.js"></script>
 
-$(document).ready(function(){
-    $(".nav").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-
-</script>
 </body>
 </html>

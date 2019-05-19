@@ -58,6 +58,18 @@
 
     &__photo-wrap{
         max-width: 720px;
+
+        .slider-nav {
+            margin: 0 -10px;
+
+            .rooms__photo{
+                margin: 20px 10px 0 10px;
+
+                @include phones{
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 
     &__descr-wrap{
@@ -170,4 +182,13 @@
 
 .fotorama__active .fotorama__thumb:after{
     display: none;
+}
+
+.slick-prev{
+    left: 25px;
+    z-index: 10;
+}
+
+.slick-next{
+    right: 25px;
 }

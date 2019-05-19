@@ -2,7 +2,10 @@
     background: url(../img/map.jpg) center center no-repeat;
     background-size: cover;
     padding: 120px 0;
-    margin-top: 372px;
+
+    @include phones{
+        margin-top: 372px;
+    }
 
     &__wrap{
         display: flex;

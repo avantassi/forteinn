@@ -15,18 +15,15 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        @include phones{
+        @include tablets{
             flex-direction: column-reverse;
         }
     }
 
     &__descr-wrap{
+        width: 50%;
 
-        @include notebook{
-            width: 50%;
-        }
-
-        @include phones{
+        @include tablets{
             width: 100%;
         }
     }
@@ -63,7 +60,7 @@
             width: 50%;
         }
 
-        @include phones{
+        @include tablets{
             width: 100%;
             margin-left: 0;
         }

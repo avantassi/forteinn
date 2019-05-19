@@ -263,7 +263,9 @@ section {
   #toggle:checked ~ .nav {
     width: 100%;
     right: 0;
-    top: 0; } }
+    top: 0;
+    padding: 30px 0;
+    z-index: 10; } }
 #toggle:checked ~ .nav:before, #toggle:checked ~ .nav:after {
   position: absolute;
   content: '';
@@ -415,15 +417,14 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .about__wrap {
         flex-direction: column-reverse; } }
-  @media screen and (max-width: 970px) {
-    .about__descr-wrap {
-      width: 50%; } }
-  @media screen and (max-width: 500px) {
-    .about__descr-wrap {
-      width: 100%; } }
+  .about__descr-wrap {
+    width: 50%; }
+    @media screen and (max-width: 768px) {
+      .about__descr-wrap {
+        width: 100%; } }
   .about__descr {
     text-align: left;
     font-size: 18px;
@@ -449,7 +450,7 @@ section {
       .about__img-wrap {
         margin-left: 15px;
         width: 50%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .about__img-wrap {
         width: 100%;
         margin-left: 0; } }
@@ -500,6 +501,13 @@ section {
           margin-bottom: 70px; } }
   .rooms__photo-wrap {
     max-width: 720px; }
+    .rooms__photo-wrap .slider-nav {
+      margin: 0 -10px; }
+      .rooms__photo-wrap .slider-nav .rooms__photo {
+        margin: 20px 10px 0 10px; }
+        @media screen and (max-width: 500px) {
+          .rooms__photo-wrap .slider-nav .rooms__photo {
+            margin-bottom: 20px; } }
   .rooms__descr-wrap {
     margin-left: 60px;
     display: flex;
@@ -582,6 +590,13 @@ section {
 .fotorama__active .fotorama__thumb:after {
   display: none; }
 
+.slick-prev {
+  left: 25px;
+  z-index: 10; }
+
+.slick-next {
+  right: 25px; }
+
 .extra {
   padding: 90px 0; }
   .extra__wrap {
@@ -646,8 +661,10 @@ section {
 .contacts {
   background: url(../img/map.jpg) center center no-repeat;
   background-size: cover;
-  padding: 120px 0;
-  margin-top: 372px; }
+  padding: 120px 0; }
+  @media screen and (max-width: 500px) {
+    .contacts {
+      margin-top: 372px; } }
   .contacts__wrap {
     display: flex;
     justify-content: flex-start; }
