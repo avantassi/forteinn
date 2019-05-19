@@ -3,7 +3,7 @@
     background-size: cover;
     padding-top: 70px;
 
-    @include phones{
+    @include tablets{
         padding-top: 10px;
     }
 
@@ -22,7 +22,7 @@
         padding: 0 120px;
         margin-bottom: 100px;
 
-        @include phones{
+        @include tablets{
             font-size: 18px;
             margin-bottom: 20px;
             padding: 0;
@@ -39,7 +39,7 @@
             box-shadow: 0 1px 5px $black;
             top: 53%;
 
-            @include phones{
+            @include tablets{
                 display: none;
             }
         }
@@ -55,7 +55,7 @@
             box-shadow: 0 1px 5px $black;
             top: 53%;
 
-            @include phones{
+            @include tablets{
                 display: none;
             }
         }
@@ -72,7 +72,7 @@
     padding: 25px 0;
     margin-top: 130px;
 
-    @include phones{
+    @include tablets{
         margin-top: 30px;
     }
 
@@ -80,7 +80,7 @@
         display: flex;
         justify-content: center;
 
-        @include phones{
+        @include tablets{
             flex-direction: column;
             align-items: center;
         }
@@ -89,7 +89,7 @@
     &__dates{
         display: flex;
 
-        @include phones{
+        @include tablets{
             flex-direction: column;
         }
     }
@@ -107,7 +107,7 @@
             right: 60px;
             top: 5px;
 
-            @include phones{
+            @include tablets{
                 right: 10px;
             }
         }
@@ -121,7 +121,7 @@
         font-size: 18px;
         color: $brown;
 
-        @include phones{
+        @include tablets{
             margin-right: 0;
             margin-bottom: 20px;
         }

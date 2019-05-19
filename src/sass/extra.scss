@@ -6,7 +6,7 @@
         justify-content: space-between;
         margin-top: 50px;
 
-        @include phones{
+        @include tablets{
             flex-direction: column;
         }
     }
@@ -14,7 +14,7 @@
     &__item{
         width: 49%;
 
-        @include phones{
+        @include tablets{
             width: 100%;
         }
     }

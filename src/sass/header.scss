@@ -10,7 +10,7 @@
         background: linear-gradient(70deg, #ffffff 35%, #ffffff 34%, #eeeeee 35%, #eeeeee 100%);
     }
 
-    @include phones{
+    @include tablets{
         background: linear-gradient(to bottom, #ffffff 50%, #ffffff 49%, #eeeeee 50%, #eeeeee 100%);
     }
 
@@ -18,7 +18,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include phones{
+        @include tablets{
             flex-direction: column;
         }
     }
@@ -40,10 +40,6 @@
     padding-top: 20px;
 
     @include notebook{
-        font-size: 14px;
-    }
-
-    @include phones{
         font-size: 12px;
     }
 }
@@ -65,7 +61,7 @@
 
         &--contacts{
 
-            @include phones{
+            @include tablets{
                 flex-direction: column;
                 width: 100%;
                 align-items: flex-start;
@@ -74,14 +70,14 @@
 
             .tel{
 
-                @include phones{
+                @include tablets{
                     margin-bottom: 20px;
                 }
             }
 
             .btn{
 
-                @include phones{
+                @include tablets{
                     display: none;
                 }
             }
@@ -115,7 +111,7 @@
 .nav{
     display: flex;
 
-    @include phones{
+    @include tablets{
         flex-direction: column;
         position: absolute;
         right: 30px;
@@ -133,7 +129,7 @@
             margin-left: 40px;
         }
 
-        @include phones{
+        @include tablets{
             // Отображение элементов как линий, в виде иконки меню
 
             position: relative;
@@ -193,7 +189,7 @@
     // Любые элементы котрым нужно изменить стили при состоянии "открыто" пишем здесь, используя селектор (~)
     // К примеру, стили для открытого навигационного меню
     & ~ .nav {
-        @include phones{
+        @include tablets{
             width: 100%;
             right: 0;
             top: 0;

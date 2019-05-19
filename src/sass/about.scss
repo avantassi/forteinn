@@ -1,7 +1,7 @@
 .about{
     padding: 90px 0;
 
-    @include phones{
+    @include tablets{
         padding: 30px 0;
     }
 
@@ -17,6 +17,36 @@
 
         @include tablets{
             flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .rooms__photo-wrap{
+            margin-top: 40px;
+            max-width: 600px;
+            width: 100%;
+
+            .slider-for3{
+                padding: 5px;
+                border: 2px solid $bordo;
+
+                .slick-track{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .slider-nav3 {
+                margin: 0 -10px;
+
+                .rooms__photo{
+                    margin: 20px 10px 0 10px;
+                    min-height: 125px;
+
+                    @include phones{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
     }
 
@@ -35,7 +65,7 @@
         margin-top: 40px;
         line-height: 34px;
 
-        @include phones{
+        @include tablets{
             font-size: 14px;
             margin-top: 20px;
             line-height: 24px;
@@ -66,8 +96,8 @@
         }
     }
 
-    &__img{
-        object-fit: cover;
-        width: 100%;
-    }
+    // &__img{
+    //     object-fit: cover;
+    //     width: 100%;
+    // }
 }

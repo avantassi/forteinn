@@ -57,7 +57,7 @@ section {
   @media screen and (max-width: 970px) {
     .main-title {
       width: 65%; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .main-title {
       font-size: 24px;
       width: 80%; } }
@@ -71,7 +71,7 @@ section {
   padding: 0 120px;
   display: inline-block;
   font-weight: bold; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .second-title {
       font-size: 18px; } }
   .second-title:before {
@@ -83,7 +83,7 @@ section {
     background-color: #402718;
     left: 0;
     top: 53%; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .second-title:before {
         width: 55px; } }
   .second-title:after {
@@ -95,7 +95,7 @@ section {
     background-color: #402718;
     right: 0;
     top: 53%; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .second-title:after {
         width: 55px; } }
 
@@ -138,13 +138,13 @@ section {
   @media screen and (max-width: 970px) {
     .header {
       background: linear-gradient(70deg, #ffffff 35%, #ffffff 34%, #eeeeee 35%, #eeeeee 100%); } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .header {
       background: linear-gradient(to bottom, #ffffff 50%, #ffffff 49%, #eeeeee 50%, #eeeeee 100%); } }
   .header__wrap {
     display: flex;
     justify-content: space-between; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .header__wrap {
         flex-direction: column; } }
 
@@ -157,9 +157,6 @@ section {
   font-size: 16px;
   padding-top: 20px; }
   @media screen and (max-width: 970px) {
-    .address {
-      font-size: 14px; } }
-  @media screen and (max-width: 500px) {
     .address {
       font-size: 12px; } }
 
@@ -174,16 +171,16 @@ section {
     .info__row--column {
       flex-direction: column;
       align-items: flex-start; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .info__row--contacts {
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
         margin-top: 30px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .info__row--contacts .tel {
         margin-bottom: 20px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .info__row--contacts .btn {
         display: none; } }
 
@@ -207,7 +204,7 @@ section {
 
 .nav {
   display: flex; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .nav {
       flex-direction: column;
       position: absolute;
@@ -222,7 +219,7 @@ section {
     @media screen and (max-width: 970px) {
       .nav__link {
         margin-left: 40px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .nav__link {
         position: relative;
         display: inline-block;
@@ -259,7 +256,7 @@ section {
 #toggle {
   display: none; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   #toggle:checked ~ .nav {
     width: 100%;
     right: 0;
@@ -310,7 +307,7 @@ section {
   background: url(../img/hero-bg.png) center center no-repeat;
   background-size: cover;
   padding-top: 70px; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .hero {
       padding-top: 10px; } }
   .hero__wrap {
@@ -325,7 +322,7 @@ section {
     font-size: 30px;
     padding: 0 120px;
     margin-bottom: 100px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .hero__img-wrap {
         font-size: 18px;
         margin-bottom: 20px;
@@ -340,7 +337,7 @@ section {
       left: 0;
       box-shadow: 0 1px 5px #000000;
       top: 53%; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         .hero__img-wrap:before {
           display: none; } }
     .hero__img-wrap:after {
@@ -353,7 +350,7 @@ section {
       right: 0;
       box-shadow: 0 1px 5px #000000;
       top: 53%; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         .hero__img-wrap:after {
           display: none; } }
   .hero__img {
@@ -364,19 +361,19 @@ section {
   background-color: rgba(174, 70, 69, 0.8);
   padding: 25px 0;
   margin-top: 130px; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .booking {
       margin-top: 30px; } }
   .booking__wrap {
     display: flex;
     justify-content: center; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .booking__wrap {
         flex-direction: column;
         align-items: center; } }
   .booking__dates {
     display: flex; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .booking__dates {
         flex-direction: column; } }
   .booking .input-wrap {
@@ -390,7 +387,7 @@ section {
       height: 34px;
       right: 60px;
       top: 5px; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         .booking .input-wrap:after {
           right: 10px; } }
   .booking__dates-input {
@@ -400,14 +397,14 @@ section {
     border: none;
     font-size: 18px;
     color: #402718; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .booking__dates-input {
         margin-right: 0;
         margin-bottom: 20px; } }
 
 .about {
   padding: 90px 0; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .about {
       padding: 30px 0; } }
   .about__title-wrap {
@@ -419,7 +416,26 @@ section {
     align-items: flex-start; }
     @media screen and (max-width: 768px) {
       .about__wrap {
-        flex-direction: column-reverse; } }
+        flex-direction: column-reverse;
+        align-items: center; } }
+    .about__wrap .rooms__photo-wrap {
+      margin-top: 40px;
+      max-width: 600px;
+      width: 100%; }
+      .about__wrap .rooms__photo-wrap .slider-for3 {
+        padding: 5px;
+        border: 2px solid #ae4645; }
+        .about__wrap .rooms__photo-wrap .slider-for3 .slick-track {
+          display: flex;
+          align-items: center; }
+      .about__wrap .rooms__photo-wrap .slider-nav3 {
+        margin: 0 -10px; }
+        .about__wrap .rooms__photo-wrap .slider-nav3 .rooms__photo {
+          margin: 20px 10px 0 10px;
+          min-height: 125px; }
+          @media screen and (max-width: 500px) {
+            .about__wrap .rooms__photo-wrap .slider-nav3 .rooms__photo {
+              margin-bottom: 20px; } }
   .about__descr-wrap {
     width: 50%; }
     @media screen and (max-width: 768px) {
@@ -431,7 +447,7 @@ section {
     color: #402718;
     margin-top: 40px;
     line-height: 34px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .about__descr {
         font-size: 14px;
         margin-top: 20px;
@@ -454,14 +470,11 @@ section {
       .about__img-wrap {
         width: 100%;
         margin-left: 0; } }
-  .about__img {
-    object-fit: cover;
-    width: 100%; }
 
 .rooms {
   padding-top: 90px;
   background-color: #eeeeee; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .rooms {
       padding-top: 30px; } }
   .rooms__services {
@@ -474,7 +487,7 @@ section {
     align-items: center;
     width: 20%;
     margin-top: 50px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .rooms__item {
         width: 50%; } }
   .rooms__title {
@@ -488,42 +501,49 @@ section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .rooms__room {
         flex-direction: column;
         position: relative;
-        margin-bottom: 120px; } }
+        margin-bottom: 120px;
+        align-items: center; } }
     .rooms__room--reverse {
       flex-direction: row-reverse; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         .rooms__room--reverse {
           flex-direction: column;
           margin-bottom: 70px; } }
   .rooms__photo-wrap {
-    max-width: 720px; }
-    .rooms__photo-wrap .slider-nav {
+    max-width: 720px;
+    width: 65%; }
+    @media screen and (max-width: 768px) {
+      .rooms__photo-wrap {
+        width: 100%; } }
+    .rooms__photo-wrap .slider-nav, .rooms__photo-wrap .slider-nav2 {
       margin: 0 -10px; }
-      .rooms__photo-wrap .slider-nav .rooms__photo {
+      .rooms__photo-wrap .slider-nav .rooms__photo, .rooms__photo-wrap .slider-nav2 .rooms__photo {
         margin: 20px 10px 0 10px; }
-        @media screen and (max-width: 500px) {
-          .rooms__photo-wrap .slider-nav .rooms__photo {
+        @media screen and (max-width: 768px) {
+          .rooms__photo-wrap .slider-nav .rooms__photo, .rooms__photo-wrap .slider-nav2 .rooms__photo {
             margin-bottom: 20px; } }
   .rooms__descr-wrap {
     margin-left: 60px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    width: 35%; }
     @media screen and (max-width: 970px) {
       .rooms__descr-wrap {
         margin-left: 40px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .rooms__descr-wrap {
         margin-left: 0;
-        align-items: center; } }
+        align-items: center;
+        width: 100%; } }
     .rooms__descr-wrap--reverse {
       margin-left: 0;
       margin-right: 60px; }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
         .rooms__descr-wrap--reverse {
           margin-right: 0; } }
     .rooms__descr-wrap .btn {
@@ -535,13 +555,13 @@ section {
     color: #ae4645;
     font-size: 24px;
     margin-bottom: 20px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .rooms__name {
         position: absolute;
         top: -60px;
         width: 100%;
         text-align: center; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .rooms__descr-list {
       margin-left: 20px; } }
   .rooms__descr-item {
@@ -560,36 +580,6 @@ section {
       height: 5px;
       border-radius: 50%; }
 
-.fotorama__nav-wrap {
-  margin-top: 15px; }
-
-.fotorama__nav__shaft {
-  display: flex;
-  justify-content: space-between; }
-
-.fotorama__thumb-border {
-  display: none; }
-
-.fotorama__nav__frame {
-  margin: 0; }
-  @media screen and (max-width: 970px) {
-    .fotorama__nav__frame {
-      height: 120px !important;
-      padding: 10px !important; } }
-
-.fotorama__thumb {
-  position: relative; }
-  .fotorama__thumb:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); }
-
-.fotorama__active .fotorama__thumb:after {
-  display: none; }
-
 .slick-prev {
   left: 25px;
   z-index: 10; }
@@ -603,12 +593,12 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: 50px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .extra__wrap {
         flex-direction: column; } }
   .extra__item {
     width: 49%; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .extra__item {
         width: 100%; } }
   .extra__img {
@@ -627,7 +617,7 @@ section {
   @media screen and (max-width: 970px) {
     .founder {
       padding-top: 20px; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .founder {
       padding-bottom: 0;
       background: url(../img/founder.jpg) center center no-repeat;
@@ -635,7 +625,7 @@ section {
   .founder__text-wrap {
     display: flex;
     justify-content: flex-end; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .founder__text-wrap {
         position: absolute;
         bottom: -93%;
@@ -652,7 +642,7 @@ section {
       .founder__text {
         font-size: 16px;
         max-width: 370px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .founder__text {
         font-size: 14px;
         line-height: 24px;
@@ -662,7 +652,7 @@ section {
   background: url(../img/map.jpg) center center no-repeat;
   background-size: cover;
   padding: 120px 0; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .contacts {
       margin-top: 372px; } }
   .contacts__wrap {
@@ -683,14 +673,14 @@ section {
     margin-right: 0;
     font-weight: normal;
     font-size: 16px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .contacts .tel {
         font-size: 14px; } }
   .contacts .mail {
     color: #ae4645;
     margin-right: 0;
     font-size: 16px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
       .contacts .mail {
         font-size: 14px; } }
   .contacts .address {

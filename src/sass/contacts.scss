@@ -3,7 +3,7 @@
     background-size: cover;
     padding: 120px 0;
     
-    @include phones{
+    @include tablets{
         margin-top: 372px;
     }
 
@@ -32,7 +32,7 @@
         font-weight: normal;
         font-size: 16px;
 
-        @include phones{
+        @include tablets{
             font-size: 14px;
         }
     }
@@ -42,7 +42,7 @@
         margin-right: 0;
         font-size: 16px;
 
-        @include phones{
+        @include tablets{
             font-size: 14px;
         }
     }

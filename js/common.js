@@ -43,16 +43,41 @@ document.addEventListener('DOMContentLoaded', function(){
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // arrows: false,
     fade: true,
     asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
+});
+$('.slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     arrows: false,
-    // dots: true,
-    // centerMode: true,
     focusOnSelect: true
-  });
+});
+
+$('.slider-for2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.slider-nav2'
+});
+$('.slider-nav2').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for2',
+    arrows: false,
+    focusOnSelect: true
+});
+
+$('.slider-for3').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.slider-nav3'
+});
+$('.slider-nav3').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for3',
+    arrows: false,
+    focusOnSelect: true
+});
